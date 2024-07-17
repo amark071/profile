@@ -1,3 +1,0 @@
-E:/个人/profile/dsaa_char_1/example_of_pointer/build/CMakeFiles/example.dir
-E:/个人/profile/dsaa_char_1/example_of_pointer/build/CMakeFiles/ALL_BUILD.dir
-E:/个人/profile/dsaa_char_1/example_of_pointer/build/CMakeFiles/ZERO_CHECK.dir

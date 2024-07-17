@@ -1,3 +1,0 @@
-/home/master/mystudy/dsaa_char_1/build/CMakeFiles/exampleofclass.dir
-/home/master/mystudy/dsaa_char_1/build/CMakeFiles/edit_cache.dir
-/home/master/mystudy/dsaa_char_1/build/CMakeFiles/rebuild_cache.dir
