@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="E:\个人\profile\dsaa_char_1\example_of_pointer\intcell.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\个人\profile\dsaa_char_1\example_of_pointer\example.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\个人\profile\dsaa_char_1\example_of_pointer\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{10080F57-D7FF-3E82-BE1D-AC47D86AAFC3}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
