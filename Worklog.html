@@ -29,7 +29,52 @@
 <h2>Introduction to the page</h2>
 <p>This page is used to note what I have done during working and what I will do in the future.</p>
 
+<h2>2024.07</h2>
+<h3>2024.07.01 to 2024.07.07</h3>
+<ol>
+  <h4>本周主要进展</h4>
+  <ul>
+      <li>配置triton，进行基础的调试（test没通过，但是可以运行）</li>
+      <li>完成基础的矩阵tiling的策略，并调试通过config与性能的测试</li>
+      <li>实现了另一种计算方法，已经基本确认正确</li>
+      <li>确定暑研方向，预计在周末阅读论文，了解astra-sim上的分布式计算模拟系统</li>
+  </ul>
 
+  <h4>本周主要问题</h4>
+  <ul>
+      <li>triton实现的gemm性能较torch而言表现较为差劲</li>
+  </ul>
+  
+  <h4>下周工作计划</h4>
+  <ul>
+      <li>周一/周二：完成cudacore与tensorcore的原理，优化tl.dot，探究一手是否可以做到使用tensorcore进行运算（但估计不是这个的问题）</li>
+      <li>周一/周二：先检验一下性能，然后尝试实现初筛的函数</li>
+      <li>周四/周五：实现一个接口可以使得接收一个input的sheet然后运行后输出一个配置的sheet；初步试验：m小数值，n，k不变</li>
+      <li>周四：3pm/7.5pm组会</li>
+  <ul>
+</ol>
+<h3>2024.07.08 to 2024.07.14</h3>
+<ol>
+  <h4>本周主要进展</h4>
+  <ul>
+      <li>完成triton的配置安装（在服务器上）</li>
+      <li>完成了矩阵乘法的基本工作，做出输出和读取config.json文件的脚本      </li>
+      <li>初步实现了int8类型相乘      </li>
+      <li>基本实现了性能略优于pytorch中调用的cublass      </li>
+  </ul>
+
+  <h4>本周主要问题</h4>
+  <ul>
+      <li>电脑坏了导致暑研没有进展      </li>
+  </ul>
+  
+  <h4>下周工作计划</h4>
+  <ul>
+      <li>周一/周二：读完int4*float16的论文，争取复现一下</li>
+      <li>晚上：暑研/先计算下hash表的时间问题</li>
+      <li>周三/周四/周五：争取做完类型分类的工作，有时间再看一下c++调用</li>
+  <ul>
+</ol>
 </td>
 </tr>
 </table>
