@@ -16,25 +16,71 @@
 <div class="menu-category">Menu</div>
 <div class="menu-item"><a href="index.html">Home</a></div>
 <div class="menu-item"><a href="Learning.html" class="current">Learning</a></div>
-<div class="menu-item"><a href="Worklog.html" class="active">Worklog</a></div> 
+<div class="menu-item"><a href="Worklog.html" class="active">Worklog2024</a></div> 
 <div class="menu-item"><a href="https://github.com/amark071">GitHub</a></div>
 <div class="menu-item"><a href="https://blog.csdn.net/hhhjjjjio?type=blog">CSDN</a></div>
 </td>
 <td id="layout-content">
+  <style>
+    .sidebar {
+        position: fixed;
+        top: 20px;
+        right: 30px;
+        width: 500px;
+        background-color: #f1f1f1;
+        padding: 15px;
+        border: 1px solid #ddd;
+        display: none; /* Initially hidden */
+    }
+    .toggle-button {
+        position: fixed;
+        top: 20px;
+        right: 30px;
+        background-color: #ddd;
+        color: white;
+        border: none;
+        padding: 5px 10px;
+        cursor: pointer;
+    }
+    .close-button {
+        background-color: #ddd;
+        color: white;
+        border: none;
+        padding: 5px 10px;
+        cursor: pointer;
+        position: absolute;
+        top: 20px;
+        right: 30px;
+    }
+</style>
+</head>
+<body>
 
-  <div class="sidebar" style="position: fixed; top: 20px; right: 30px; width: 500px;">
-    <h3>Page Navigation</h3>
-    <ul>
-      <li><a href="#partm1">Part M.I: Mathematical Statistics</a></li>
-      <li><a href="#partm2">Part M.II: Mathematical Introduction to Machine Learning</a></li>
-      <li><a href="#partm3">Part M.III: Numerical Algebra & Analysis</a></li>
-      <li><a href="#partm4">Part M.IV: Optimization Algorithms</a></li>
-      <li><a href="#partc1">Part C.I: Data structures and algorithms</a></li>
-      <li><a href="#partc2">Part C.II: Parallel and Distributed Computing</a></li>
+<button class="toggle-button" onclick="toggleSidebar()">ON</button>
 
-    </ul>
-  </div>  
+<div class="sidebar" id="sidebar">
+<button class="close-button" onclick="toggleSidebar()">OFF</button>
+<h3>Page Navigation</h3>
+<ul>
+    <li><a href="#partm1">Part M.I: Mathematical Statistics</a></li>
+    <li><a href="#partm2">Part M.II: Mathematical Introduction to Machine Learning</a></li>
+    <li><a href="#partm3">Part M.III: Numerical Algebra & Analysis</a></li>
+    <li><a href="#partm4">Part M.IV: Optimization Algorithms</a></li>
+    <li><a href="#partc1">Part C.I: Data structures and algorithms</a></li>
+    <li><a href="#partc2">Part C.II: Parallel and Distributed Computing</a></li>
+</ul>
+</div>
 
+<script>
+function toggleSidebar() {
+    var sidebar = document.getElementById('sidebar');
+    if (sidebar.style.display === 'none' || sidebar.style.display === '') {
+        sidebar.style.display = 'block';
+    } else {
+        sidebar.style.display = 'none';
+    }
+}
+</script>
 
 <div id="toptitle">
 <h1>Learning of Computer Science and Mathmatic</h1>
