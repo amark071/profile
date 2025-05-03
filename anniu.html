@@ -1,0 +1,43 @@
+/* 新增返回顶部style按钮样式 */
+#back-to-top {
+		position: fixed;
+		bottom: 20px;
+		right: 20px;
+		width: 50px;
+		height: 50px;
+		border-radius: 50%;
+		background-color: #333;
+		color: #fff;
+		text-align: center;
+		line-height: 50px;
+		cursor: pointer;
+		z-index: 1000;
+		display: none; /* 初始时隐藏 */
+	}
+
+	#back-to-top:hover {
+		background-color: #555;
+	}
+
+<!-- 新增返回顶部body上按钮 -->
+<div id="back-to-top" title="返回顶部">↑</div>
+
+<script>
+	// 显示/隐藏返回顶部按钮
+	window.addEventListener('scroll', function() {
+		var backToTop = document.getElementById('back-to-top');
+		if (window.scrollY > 200) { // 当滚动超过200像素时显示按钮
+			backToTop.style.display = 'block';
+		} else {
+			backToTop.style.display = 'none';
+		}
+	});
+
+	// 点击按钮返回顶部
+	document.getElementById('back-to-top').addEventListener('click', function() {
+		window.scrollTo({
+			top: 0,
+			behavior: 'smooth' // 平滑滚动
+		});
+	});
+</script>
